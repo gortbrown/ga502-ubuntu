@@ -1,4 +1,4 @@
-# ga502-linux
+# ga502-ubuntu
 Scripts to help make Linux work well on the Asus ROG Zephyrus GA502DU Gaming Laptop
 
 This set of scripts will help you get Ubuntu Linux (or any Ubuntu based Distro) working on the Asus ROG Zephyrus GA502DU laptop. After a normal installation of Linux, some things like WiFi won't work. This script will set things up so most things will work.
