@@ -1,13 +1,9 @@
 apt update
 apt-get install --reinstall git dkms build-essential gdm3 linux-headers-$(uname -r)
-git clone https://github.com/tomaspinho/rtl8821ce
-cd rtl8821ce
-chmod +x dkms-install.sh
-chmod +x dkms-remove.sh
-./dkms-install.sh
-cd -
-mv grub /etc/default/grub
-add-apt-repository ppa:graphics-drivers/ppa
-apt install nvidia-driver-440
+apt install rtl8821ce-dkms
+if test -f "/etc/default/grub"; then
+    mv grub /etc/default/grub
+fi
 echo "" 
 echo "Now reboot, and run setup2.sh AS ROOT"
+echo "If you aren't running Pop OS with Nvidia drivers included, run 'nvidia-setup.sh' first."
