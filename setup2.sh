@@ -12,5 +12,16 @@ else
 fi
 add-apt-repository ppa:lukedjones/rog-core
 apt update
-apt install rog-core
+git clone https://gitlab.com/asus-linux/hid-asus-rog.git
+cd hid-asus-rog
+make dkms
+make onboot
+cd -
+rm -rf hid-asus-rog
+git clone https://gitlab.com/asus-linux/asus-nb-ctrl.git
+cd asus-nb-ctrl
+make
+make install
+cd -
+rm -rf asus-nb-ctrl
 echo 'Done! Please reboot!'
