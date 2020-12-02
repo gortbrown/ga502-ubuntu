@@ -27,10 +27,8 @@ Steps:
 
 5. Whenever you're asked to choose Yes or No, type Y to install the programs. If asked to choose between "gdm" and something else like "lightdm" or "sdm", choose "gdm". This will allow things to start properly on startup. You may also be prompted to set up secure boot. If you are, choose ok, and enter in a password between 8 and 16 characters long. Remember this password, because when you reboot, it will ask you to register the MOK. When you see this, choose to enrol MOK, choose Continue and type in the password when prompted. When asked to press Enter or Ctrl + C, press Enter to add the repository needed to install Nvidia Graphics drivers.
 
-6. When this is done, reboot the system so the changes can take effect.
+6. When this is done, run the nvidia-setup.sh script to install nvidia drivers. If you downloaded/installed a version of your distro that already had the proprietary nvidia drivers included, like Pop OS or Zorin OS, you can skip this.
 
-7. Once your system has rebooted repeat steps 2 and 3 to open terminal in the directory with your files. 
+7. Run setup2.sh the same way you ran setup1.sh
 
-8. Run setup2.sh the same way you ran setup1.sh
-
-9. Once the script is done, reboot into your new system!
+8. Once the script is done, reboot into your new system!
