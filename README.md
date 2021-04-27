@@ -1,4 +1,10 @@
 # ga502-ubuntu
+
+#This repository is being archived
+The Linux kernel version 5.11 (confirmed working with 5.11.11 and newer) and up now support everything this script enabled. So you can now install any distro with this kernel and have everything work out of the box (with the exception of maybe the graphics drivers, but that can be changed easily). These scripts will still be here if anyone needs them, but they won't be updated as everything works with the newest kernel. Thanks for the support!
+
+
+
 Scripts to help make Linux work well on the Asus ROG Zephyrus GA502DU Gaming Laptop
 
 This set of scripts will help you get Ubuntu Linux (or any Ubuntu based Distro) working on the Asus ROG Zephyrus GA502DU laptop. After a normal installation of Linux, some things like WiFi won't work. This script will set things up so most things will work.
